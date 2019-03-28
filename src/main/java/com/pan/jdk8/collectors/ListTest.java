@@ -30,7 +30,7 @@ public class ListTest {
 
 
         System.out.println(EnumT1.EWYYX.getValue());
-        System.out.println( EnumT1.getValue(3));
+        System.out.println( EnumT1.getValue(-1)+"------------");
 
     }
 }
