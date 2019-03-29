@@ -18,8 +18,6 @@ public class ListTest {
             u.setId(i);
             userList.add(u);
         }
-
-
         Stream<User> userStream = userList.stream().filter(user -> user.getId() == 1);
         System.out.println(userStream.collect(Collectors.toList()));
 
@@ -29,8 +27,20 @@ public class ListTest {
 //                .collect(Collectors.toList());
 
 
+
+
+        Integer c = null;
+        System.out.println(c%1000);
         System.out.println(EnumT1.EWYYX.getValue());
         System.out.println( EnumT1.getValue(-1)+"------------");
 
     }
+    public int t(Integer a){
+         return t1(a);
+    }
+
+    public int t1(Integer b){
+        return (b/100);
+    }
 }
+
